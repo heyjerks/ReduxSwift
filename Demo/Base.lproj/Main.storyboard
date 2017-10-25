@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RsR-5J-cFJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Counter-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1VY-sf-u61">
+                                <rect key="frame" x="166.5" y="355" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHD-nF-dyy">
+                                <rect key="frame" x="16" y="350" width="65" height="30"/>
+                                <state key="normal" title="Decrease"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQb-b4-MjC">
+                                <rect key="frame" x="300" y="350" width="59" height="30"/>
+                                <state key="normal" title="Increase"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1VY-sf-u61" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="4AR-rM-xwk"/>
+                            <constraint firstItem="nQb-b4-MjC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1VY-sf-u61" secondAttribute="trailing" id="7bN-ST-efo"/>
+                            <constraint firstItem="IHD-nF-dyy" firstAttribute="centerY" secondItem="1VY-sf-u61" secondAttribute="centerY" id="Arg-IF-S6b"/>
+                            <constraint firstItem="1VY-sf-u61" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aXk-Pg-4g9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nQb-b4-MjC" secondAttribute="trailing" constant="16" id="cWQ-L8-cU8"/>
+                            <constraint firstItem="IHD-nF-dyy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kkf-79-rWV"/>
+                            <constraint firstItem="nQb-b4-MjC" firstAttribute="centerY" secondItem="1VY-sf-u61" secondAttribute="centerY" id="pCf-82-sn1"/>
+                            <constraint firstItem="1VY-sf-u61" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IHD-nF-dyy" secondAttribute="trailing" id="zfR-d5-oaw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Counter" id="s2X-jg-sTV"/>
+                    <connections>
+                        <outlet property="countLabel" destination="1VY-sf-u61" id="QB7-dg-Ua1"/>
+                        <outlet property="decreaseButton" destination="IHD-nF-dyy" id="n19-98-fqZ"/>
+                        <outlet property="increaseButton" destination="nQb-b4-MjC" id="aM3-TR-eLN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZNm-oC-IYa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RsR-5J-cFJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0wo-TJ-lLQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x2A-nN-DIW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BJ-ZW-pZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="134"/>
+        </scene>
+    </scenes>
+</document>
