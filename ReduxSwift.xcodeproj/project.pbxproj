@@ -23,12 +23,12 @@
 		4B33EBC21F7C088B00E78586 /* ReduxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B3AB9D71F7B05F400B9F81D /* ReduxSwift.framework */; };
 		4B33EBC91F7C0CBC00E78586 /* StoreType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBC41F7C093300E78586 /* StoreType+Rx.swift */; };
 		4B33EBD31F7C345700E78586 /* CombinedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBD11F7C344C00E78586 /* CombinedReducer.swift */; };
-		4B33EBE51F7EE03200E78586 /* AsyncThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBE31F7EE02400E78586 /* AsyncThunk.swift */; };
+		4B33EBE51F7EE03200E78586 /* ActionThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBE31F7EE02400E78586 /* ActionThunk.swift */; };
 		4B33EC001F7EECF100E78586 /* ReduxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B33EBEB1F7EEC8200E78586 /* ReduxSwift.framework */; };
 		4B33EC011F7EED2B00E78586 /* RxReduxSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B33EBBF1F7C085C00E78586 /* RxReduxSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B33EC021F7EED3400E78586 /* StoreType+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBC41F7C093300E78586 /* StoreType+Rx.swift */; };
 		4B33EC041F7EED3800E78586 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBB81F7C083600E78586 /* Action.swift */; };
-		4B33EC051F7EED3800E78586 /* AsyncThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBE31F7EE02400E78586 /* AsyncThunk.swift */; };
+		4B33EC051F7EED3800E78586 /* ActionThunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBE31F7EE02400E78586 /* ActionThunk.swift */; };
 		4B33EC061F7EED3800E78586 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBB41F7C083600E78586 /* State.swift */; };
 		4B33EC071F7EED3800E78586 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBB31F7C083600E78586 /* Reducer.swift */; };
 		4B33EC081F7EED3800E78586 /* CombinedReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B33EBD11F7C344C00E78586 /* CombinedReducer.swift */; };
@@ -93,7 +93,7 @@
 		4B33EBBF1F7C085C00E78586 /* RxReduxSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxReduxSwift.h; sourceTree = "<group>"; };
 		4B33EBC41F7C093300E78586 /* StoreType+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoreType+Rx.swift"; sourceTree = "<group>"; };
 		4B33EBD11F7C344C00E78586 /* CombinedReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedReducer.swift; sourceTree = "<group>"; };
-		4B33EBE31F7EE02400E78586 /* AsyncThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncThunk.swift; sourceTree = "<group>"; };
+		4B33EBE31F7EE02400E78586 /* ActionThunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionThunk.swift; sourceTree = "<group>"; };
 		4B33EBEB1F7EEC8200E78586 /* ReduxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReduxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B33EBF81F7EECA600E78586 /* RxReduxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxReduxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B33EC761F7FF7D300E78586 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4B33EBB81F7C083600E78586 /* Action.swift */,
-				4B33EBE31F7EE02400E78586 /* AsyncThunk.swift */,
+				4B33EBE31F7EE02400E78586 /* ActionThunk.swift */,
 				4B33EBB41F7C083600E78586 /* State.swift */,
 				4B33EBB31F7C083600E78586 /* Reducer.swift */,
 				4B33EBD11F7C344C00E78586 /* CombinedReducer.swift */,
@@ -425,7 +425,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Jaesung Jung";
 				TargetAttributes = {
 					4B1E2A281F7B0D9E00D33C13 = {
@@ -573,7 +573,7 @@
 			files = (
 				4B33EC081F7EED3800E78586 /* CombinedReducer.swift in Sources */,
 				4B33EC041F7EED3800E78586 /* Action.swift in Sources */,
-				4B33EC051F7EED3800E78586 /* AsyncThunk.swift in Sources */,
+				4B33EC051F7EED3800E78586 /* ActionThunk.swift in Sources */,
 				4B33EC0B1F7EED3800E78586 /* Store.swift in Sources */,
 				4B33EC091F7EED3800E78586 /* Middleware.swift in Sources */,
 				4B79E8AA1F9F8C2D0011E858 /* StoreType.swift in Sources */,
@@ -606,7 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B33EBE51F7EE03200E78586 /* AsyncThunk.swift in Sources */,
+				4B33EBE51F7EE03200E78586 /* ActionThunk.swift in Sources */,
 				4B33EBD31F7C345700E78586 /* CombinedReducer.swift in Sources */,
 				4B33EBBD1F7C083C00E78586 /* Subscriber.swift in Sources */,
 				4B33EBBE1F7C083C00E78586 /* Action.swift in Sources */,
@@ -765,6 +765,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -791,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -827,7 +829,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsjung.RxReduxSwift;
 				PRODUCT_NAME = RxReduxSwift;
@@ -853,7 +854,6 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jsjung.RxReduxSwift;
 				PRODUCT_NAME = RxReduxSwift;

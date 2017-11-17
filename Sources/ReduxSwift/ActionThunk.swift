@@ -1,5 +1,5 @@
 //
-//  AsyncThunk.swift
+//  ActionThunk.swift
 //
 //  Copyright (c) 2017 Jaesung Jung. All rights reserved.
 //
